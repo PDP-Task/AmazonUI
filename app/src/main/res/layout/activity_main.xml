@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/blue_light"
+        app:elevation="0dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/edittext_round"
+                    android:drawableStart="@drawable/outline_search_24"
+                    android:drawablePadding="5dp"
+                    android:hint="@string/search_amazon"
+                    android:paddingStart="10dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|end">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:background="@color/white"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_baseline_qr_code_scanner_24" />
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20dp"
+                    android:background="@color/white"
+                    android:contentDescription="@string/todo"
+                    android:src="@drawable/ic_baseline_keyboard_voice_24" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/blue_light"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/blue_light_2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/blue_light_2"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="10dp">
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue_light_2"
+                        android:contentDescription="@string/todo"
+                        android:src="@drawable/ic_baseline_location_on_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="@string/deliver_to_uzbekistan"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:background="@color/blue_light">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/im_game" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview_essential"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sign_in"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <Button
+                        android:id="@+id/btn_sign_in"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/button_round"
+                        android:text="@string/sign_in_security"
+                        android:textAllCaps="false"
+                        android:textColor="@color/black"
+                        app:backgroundTint="@null" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/create_an_account"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/men_s_fashion_sneakers"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_fashion"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1"
+                                tools:ignore="NestedWeights">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/im_1" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/im_2" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                tools:ignore="NestedWeights">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/im_3" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/im_4" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/see_more"
+                        android:textColor="#00B8D4"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/popular_gifts_in_camera"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_popular"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginHorizontal="2dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1"
+                                tools:ignore="NestedWeights">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/img_cam1" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/img_cam2" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_margin="1dp"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                tools:ignore="NestedWeights">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/img_cam3" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_margin="1dp"
+                                android:layout_weight="1">
+
+                                <com.google.android.material.imageview.ShapeableImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:adjustViewBounds="true"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/img_cam4" />
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/see_more"
+                        android:textColor="#00B8D4"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/top_sellers_in_books_for_you"
+                            android:textColor="#6C6C6C"
+                            android:textSize="22sp" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recyclerview_books"
+                            android:layout_width="match_parent"
+                            android:layout_height="400dp"
+                            android:layout_marginTop="10dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/todo"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_toys" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/explore_departaments"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recyclerview_explore"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="350dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:itemIconTint="@color/black"
+        app:menu="@menu/bottom_menu" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

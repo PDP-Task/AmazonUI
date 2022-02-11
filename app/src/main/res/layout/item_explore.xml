@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/explore_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:contentDescription="@string/todo"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_oculus" />
+
+        <TextView
+            android:id="@+id/explore_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

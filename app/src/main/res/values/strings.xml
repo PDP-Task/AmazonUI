@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AmazonUi</string>
+    <string name="search_amazon">Search Amazon</string>
+    <string name="todo">todo</string>
+    <string name="deliver_to_uzbekistan">Deliver to Uzbekistan</string>
+    <string name="sign_in">Sign in for the best experiense</string>
+    <string name="sign_in_security">Sign in security</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="men_s_fashion_sneakers">Men\'s fashion sneakers</string>
+    <string name="oculus">Oculus</string>
+    <string name="see_more">See more</string>
+    <string name="popular_gifts_in_camera">Popular Gifts in Camera</string>
+    <string name="top_sellers_in_books_for_you">Top Sellers in Books for you</string>
+    <string name="explore_departaments">Explore Departments</string>
+</resources>
